@@ -8,22 +8,17 @@
     <style>
       .product-container {
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
       }
   
       .product {
-        width: 48%; 
+        width: 100%;
         margin-bottom: 20px;
         padding: 10px;
         background-color: #f2f2f2;
         border-radius: 5px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         text-align: center;
       }
 
@@ -68,8 +63,8 @@
     <title>Nos patisseries</title>
 </head>
 <body>
-     <!-- navbar -->
-     <nav class="navbar navbar-expand-lg">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
             <span class="h3 fw-bold">The Nutmeg</span>
@@ -99,47 +94,42 @@
             </ul>
           </div>
         </div>
-      </nav> 
-    <!--navbar-->
-    <h1 class="text-center mt-5">Articles en vente</h1>
+    </nav>
 
-    <div class="product-container">
-      <div class="product">
-        <img src="./assets/images/patisserie1.JPG" alt="Produit 1">
-        <h2>Choux à la crème</h2>
-        <p>Entrez dans un univers merveilleux avec ces bouchées de plaisir, les choux à la crème et leur crème coco pour ravir vos papilles.</p>
-        <span class="price"; style="font-size: 2em;">$10.00</span>
-        <button class="add-to-cart">Ajouter au panier</button>
-      </div>
-
-      <div class="product">
-        <img src="./assets/images/patisserie2.JPG" alt="Produit 2">
-        <h2>Banana Bread</h2>
-        <p>Banana bread ou le cake le plus moelleux de la terre ? Redécouvrez ce classique parsemé de pépites de chocolat et d'amandes effilées.</p>
-        <span class="price"; style="font-size: 2em;">$15.00</span>
-        <button class="add-to-cart">Ajouter au panier</button>
-      </div>
-
-      <div class="product">
-        <img src="./assets/images/patisserie3.JPG" alt="Produit 3">
-        <h2>Crème Brûlée</h2>
-        <p>Quoi de mieux qu'un délicieux dessert français, une crème brûlée onctueuse recouverte d'un caramel sucré croquant.</p>
-        <span class="price"; style="font-size: 2em;">$10.00</span>
-        <button class="add-to-cart">Ajouter au panier</button>
-      </div>
-
-      <div class="product">
-        <img src="./assets/images/home1.JPG" alt="Produit 4">
-        <h2>Crème Brûlée Donuts</h2>
-        <p>Un délicieux donut fourré d'une crème pâtissière vanille et nappé d'un caramel croquant, le tout accompagné d'un quartier de fraise.</p>
-        <span class="price "; style="font-size: 2em;">$12.00</span>
-        <button class="add-to-cart">Ajouter au panier</button>
-      </div>
-
+    <!-- Contenu de la page -->
+    <div class="container">
+        <div class="row product-container">
+            <div class="col-md-6">
+                <div class="product">
+                  <img src="./assets/images/chef-patissier1.JPG" alt="Produit 1">
+                  <h2>Bernard</h2>
+                  <p>bernard est un chef patissier de 43 ans qui est specialiser dans les gateaux a base de chocolat, maintenant 20 ans qu'il pratique ce metier </p>
+          
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="product">
+                  <img src="./assets/images/chef-patissier2.JPG" alt="Produit 2">
+                  <h2>Charles</h2>
+                  <p>Charles a 30 ans et est un patissier depuis 10 ans maintenant, il a graduer d'une des plus 
+                    grandes institutions patissiere du monde, sa specialite ce sont les gateaux a 
+                    la banane
+                  </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="product">
+                  <img src="./assets/images/chef-patissier3.JPG" alt="Produit 3">
+                  <h2>Angelo</h2>
+                  <p>Angelo est d'origine portugaise et est patissier depuis 5 ans, il a participer a plusieurs concours
+                    patissier dont l'emission qui sera le plus grand patissier. il a maintenant 35 ans et est specialiser 
+                    dans la confection de gateaux d'anniversaire et dans les choux a la creme
+                  </p>  
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-  
-  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
